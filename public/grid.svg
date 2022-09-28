@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="40px" viewBox="0 0 31 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <polygon id="path-1" points="0 0.0287 30.8415 0.0287 30.8415 27.3782 0 27.3782"></polygon>
+        <polygon id="path-3" points="0 0 30.8415 0 30.8415 21.3045 0 21.3045"></polygon>
+    </defs>
+    <g id="Invoices" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sepetmber-2021-Copy-2" transform="translate(-57.000000, -53.000000)">
+            <g id="Group-7" transform="translate(57.000000, 53.471250)">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M9.7508,11.5702 C9.7508,10.6597 10.4883,9.9212 11.3953,9.9212 L30.8418,9.9212 L30.8418,1.7652 C30.8418,0.8067 30.0658,0.0287 29.1103,0.0287 L1.7318,0.0287 C0.7753,0.0287 -0.0002,0.8067 -0.0002,1.7652 L-0.0002,25.6427 C-0.0002,26.6017 0.7753,27.3782 1.7318,27.3782 L9.7508,27.3782 L9.7508,11.5702 Z" id="Fill-1" fill="#ED1F24" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 18.195450)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <path d="M21.089,10.0835 C21.089,10.994 20.3515,11.732 19.4445,11.732 L0,11.732 L0,19.569 C0,20.5275 0.7745,21.3045 1.7315,21.3045 L29.1105,21.3045 C30.0655,21.3045 30.842,20.5275 30.842,19.569 L30.842,1.736 C30.842,0.7765 30.0655,0 29.1105,0 L21.089,0 L21.089,10.0835 Z" id="Fill-4" fill="#6D6E71" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
