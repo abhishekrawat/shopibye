@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="h-[80vh] w-full relative">
+    <div className="h-[70vh] w-full relative">
       <div className="absolute bottom-0 z-10 flex flex-col items-center pb-0 mb-4 text-center text-white inset-x-4 grow ">
         <h1 className="p-3 mb-4 text-4xl font-bold rounded bg-white/20 drop-shadow-md shadow-black">
           Summer styles are finally here

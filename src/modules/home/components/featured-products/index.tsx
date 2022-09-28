@@ -9,7 +9,7 @@ const FeaturedProducts = () => {
   return (
     <div className="py-4">
       <div className="py-4 content-container">
-        <div className="flex flex-col items-center mb-16 text-center">
+        {/* <div className="flex flex-col items-center mb-16 text-center">
           <span className="mb-6 text-gray-600 text-base-regular">
             Latest products
           </span>
@@ -17,6 +17,15 @@ const FeaturedProducts = () => {
             Our newest styles are here to help you look your best.
           </p>
           <UnderlineLink href="/store">Explore products</UnderlineLink>
+        </div> */}
+        <div className="flex items-center justify-between mb-8">
+          <span className="text-2xl font-bold text-gray-600 ">
+            Latest Products
+          </span>
+          <span className="text-lg font-normal text-gray-600 ">
+            View all
+          </span>
+
         </div>
         <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-4 gap-y-8">
           {data
