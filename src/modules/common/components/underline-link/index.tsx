@@ -10,12 +10,12 @@ const UnderlineLink = ({ href, children }: UnderlineLinkProps) => {
   return (
     <div className="flex items-start">
       <Link href={href}>
-        <a className="flex items-center px-4 py-4 transition-all duration-200 bg-red-700 rounded text-large-bold gap-x-4 group hover:pl-4 hover:pr-1">
+        <a className="px-8 py-4 mb-2 mr-2 font-bold text-center text-white rounded-full text-md bg-gradient-to-r from-purple-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
           <span className="text-white">{children}</span>
-          <ArrowRight
+          {/* <ArrowRight
             size={20}
             className="transition-all duration-200 white group-hover:ml-2"
-          />
+          /> */}
         </a>
       </Link>
     </div>
