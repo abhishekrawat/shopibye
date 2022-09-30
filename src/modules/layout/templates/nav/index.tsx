@@ -8,6 +8,7 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 const Nav = () => {
   const { pathname } = useRouter()
@@ -48,7 +49,7 @@ const Nav = () => {
       <header
         className={clsx(
           // "relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-white group-hover:border-gray-200",
-          "!bg-white text-gray-900 relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 ",
+          "!bg-white text-gray-900 relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 drop-shadow-2xl ",
           {
             "!bg-white !border-gray-200": !isHome || isScrolled,
           }
@@ -71,9 +72,9 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="flex items-center h-full">
+          <div className="flex items-center h-full lg:hidden">
             <Link href="/">
-              <a className="uppercase text-xl-semi">Ciyona</a>
+            <Image src="/ciyona_logo.svg" height={120} width={110} alt="" />
             </Link>
           </div>
 

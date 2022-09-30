@@ -2,7 +2,8 @@ import { Popover, Transition } from "@headlessui/react"
 import {
   useFeaturedProductsQuery,
   useNavigationCollections,
-} from "@lib/hooks/use-layout-data"
+} from "@lib/hooks/use-layout-data";
+import Image from "next/image";
 import repeat from "@lib/util/repeat"
 import ProductPreview from "@modules/products/components/product-preview"
 import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview"
@@ -27,7 +28,7 @@ const DropdownMenu = () => {
       className="h-full"
     >
       <div className="flex items-center h-full">
-        <Popover className="h-full flex">
+        <Popover className="flex h-full">
           <>
             <Link href="/shop" passHref>
               <a className="relative flex h-full">
@@ -37,7 +38,7 @@ const DropdownMenu = () => {
                   )}
                   onClick={() => push("/store")}
                 >
-                  Store
+                  <Image src="/ciyona_logo.svg" height={120} width={110} alt="" />
                 </Popover.Button>
               </a>
             </Link>
@@ -54,12 +55,12 @@ const DropdownMenu = () => {
             >
               <Popover.Panel
                 static
-                className="absolute top-full inset-x-0 text-sm text-gray-700 z-30 border-y border-gray-200"
+                className="absolute inset-x-0 z-30 text-sm text-gray-700 border-gray-200 top-full border-y"
               >
-                <div className="relative bg-white py-8">
+                <div className="relative py-8 bg-white">
                   <div className="flex items-start content-container">
                     <div className="flex flex-col flex-1 max-w-[30%]">
-                      <h3 className="text-base-semi text-gray-900 mb-4">
+                      <h3 className="mb-4 text-gray-900 text-base-semi">
                         Collections
                       </h3>
                       <div className="flex items-start">
