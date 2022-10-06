@@ -38,7 +38,7 @@ const DropdownMenu = () => {
                   )}
                   onClick={() => push("/store")}
                 >
-                  <Image src="/ciyona_logo.svg" height={120} width={110} alt="" />
+                  Store
                 </Popover.Button>
               </a>
             </Link>

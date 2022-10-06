@@ -48,10 +48,9 @@ const Nav = () => {
     >
       <header
         className={clsx(
-          // "relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-white group-hover:border-gray-200",
-          "!bg-white text-gray-900 relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 drop-shadow-2xl ",
+          "!bg-white text-gray-900 relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200  ",
           {
-            "!bg-white !border-gray-200": !isHome || isScrolled,
+            " !border-gray-200 drop-shadow-lg": !isHome || isScrolled,
           }
         )}
       >
@@ -67,22 +66,26 @@ const Nav = () => {
             <div className="block small:hidden">
               <Hamburger setOpen={toggle} />
             </div>
-            <div className="hidden h-full small:block">
-              <DropdownMenu />
+            <div className="h-full small:block">
+            <Link href="/">
+            <Image src="/ciyona_logo.svg" height={60} width={100} alt="" />
+            </Link>
+              
             </div>
           </div>
 
-          <div className="flex items-center h-full lg:hidden">
-            <Link href="/">
-            <Image src="/ciyona_logo.svg" height={120} width={110} alt="" />
-            </Link>
+          <div className="flex items-center h-full cursor-pointer lg:flex-start">
+          <DropdownMenu />
           </div>
 
           <div className="flex items-center justify-end flex-1 h-full gap-x-6 basis-0">
-            <div className="items-center hidden h-full small:flex gap-x-6">
+            <div className="items-center hidden h-full small:flex gap-x-4">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
               <Link href="/account">
-                <a>Account</a>
+                
+                
+                Account
+                
               </Link>
             </div>
             <CartDropdown />

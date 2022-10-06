@@ -1,5 +1,5 @@
-import UnderlineLink from "@modules/common/components/underline-link"
-import Image from "next/image"
+import UnderlineLink from "@modules/common/components/underline-link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -9,8 +9,10 @@ const Hero = () => {
           Summer styles are finally here
         </h1>
         <UnderlineLink href="/store">Explore products</UnderlineLink>
+
+        
       </div>
-      <Image
+      {/* <Image
         src="/hero.jpg"
         layout="fill"
         loading="eager"
@@ -20,9 +22,10 @@ const Hero = () => {
         alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
         className="absolute inset-0"
         draggable="false"
-      />
+      /> */}
+      
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
