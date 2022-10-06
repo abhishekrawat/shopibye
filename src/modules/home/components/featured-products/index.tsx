@@ -3,7 +3,7 @@ import UnderlineLink from "@modules/common/components/underline-link"
 import ProductPreview from "@modules/products/components/product-preview"
 import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview"
 
-const FeaturedProducts = () => {
+const FeaturedProducts = (props) => {
   const { data } = useFeaturedProductsQuery()
 
   return (
@@ -20,7 +20,7 @@ const FeaturedProducts = () => {
         </div> */}
         <div className="flex items-center justify-between mb-8">
           <span className="text-2xl font-bold text-gray-600 ">
-            Latest Products
+            {props.name}
           </span>
           <span className="text-lg font-normal text-gray-600 ">
             View all
