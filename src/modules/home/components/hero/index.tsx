@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-[70vh] w-full relative">
+    <div className="h-[70vh] w-full relative mt-16">
       <div className="absolute bottom-0 z-10 flex flex-col items-center pb-0 mb-4 text-center text-white inset-x-4 grow ">
         <h1 className="p-3 mb-4 text-4xl font-bold rounded bg-white/20 drop-shadow-md shadow-black">
           Summer styles are finally here
@@ -12,7 +12,7 @@ const Hero = () => {
 
         
       </div>
-      {/* <Image
+      <Image
         src="/hero.jpg"
         layout="fill"
         loading="eager"
@@ -22,7 +22,7 @@ const Hero = () => {
         alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
         className="absolute inset-0"
         draggable="false"
-      /> */}
+      />
       
     </div>
   );

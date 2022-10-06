@@ -48,7 +48,7 @@ const Nav = () => {
     >
       <header
         className={clsx(
-          "!bg-white text-gray-900 relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200  ",
+          "!bg-white text-gray-900 relative h-16 px-1 md:px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200  ",
           {
             " !border-gray-200 drop-shadow-lg": !isHome || isScrolled,
           }
