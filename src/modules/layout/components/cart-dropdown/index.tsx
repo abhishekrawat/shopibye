@@ -1,28 +1,45 @@
-import { Popover, Transition } from "@headlessui/react"
-import { useCartDropdown } from "@lib/context/cart-dropdown-context"
-import { useStore } from "@lib/context/store-context"
-import useEnrichedLineItems from "@lib/hooks/use-enrich-line-items"
-import Button from "@modules/common/components/button"
-import LineItemOptions from "@modules/common/components/line-item-options"
-import LineItemPrice from "@modules/common/components/line-item-price"
-import Trash from "@modules/common/icons/trash"
-import Thumbnail from "@modules/products/components/thumbnail"
-import { formatAmount, useCart } from "medusa-react"
-import Link from "next/link"
-import { Fragment } from "react"
-import { CalculatedVariant } from "types/medusa"
+import { Popover, Transition } from "@headlessui/react";
+import { useCartDropdown } from "@lib/context/cart-dropdown-context";
+import { useStore } from "@lib/context/store-context";
+import useEnrichedLineItems from "@lib/hooks/use-enrich-line-items";
+import Button from "@modules/common/components/button";
+import LineItemOptions from "@modules/common/components/line-item-options";
+import LineItemPrice from "@modules/common/components/line-item-price";
+import Trash from "@modules/common/icons/trash";
+import Thumbnail from "@modules/products/components/thumbnail";
+import { formatAmount, useCart } from "medusa-react";
+import Link from "next/link";
+import { Fragment } from "react";
+import { CalculatedVariant } from "types/medusa";
+import Image from "next/image";
 
 const CartDropdown = () => {
-  const { cart, totalItems } = useCart()
-  const items = useEnrichedLineItems()
-  const { deleteItem } = useStore()
-  const { state, open, close } = useCartDropdown()
+  const { cart, totalItems } = useCart();
+  const items = useEnrichedLineItems();
+  const { deleteItem } = useStore();
+  const { state, open, close } = useCartDropdown();
 
   return (
-    <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
+    <div className="z-50 flex items-center h-full" onMouseEnter={open} onMouseLeave={close}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+        />
+      </svg>
       <Popover className="relative h-full">
         <Link href="/cart" passHref>
-          <Popover.Button className="h-full">{`My Bag (${totalItems})`}</Popover.Button>
+          <Popover.Button className="h-full">
+            {totalItems}
+          </Popover.Button>
         </Link>
         <Transition
           show={state}
@@ -38,7 +55,7 @@ const CartDropdown = () => {
             static
             className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-white border-x border-b border-gray-200 w-[382px] text-gray-900"
           >
-            <div className="p-4 flex items-center justify-center">
+            <div className="flex items-center justify-center p-4">
               <h3 className="text-large-semi">Shopping Bag</h3>
             </div>
             {cart && items?.length ? (
@@ -46,7 +63,7 @@ const CartDropdown = () => {
                 <div className="overflow-y-scroll max-h-[402px] px-4 grid grid-cols-1 gap-y-8 no-scrollbar">
                   {items
                     .sort((a, b) => {
-                      return a.created_at > b.created_at ? -1 : 1
+                      return a.created_at > b.created_at ? -1 : 1;
                     })
                     .map((item) => (
                       <div
@@ -80,10 +97,10 @@ const CartDropdown = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="flex items-end justify-between text-small-regular flex-1">
+                          <div className="flex items-end justify-between flex-1 text-small-regular">
                             <div>
                               <button
-                                className="flex items-center gap-x-1 text-gray-500"
+                                className="flex items-center text-gray-500 gap-x-1"
                                 onClick={() => deleteItem(item.id)}
                               >
                                 <Trash size={14} />
@@ -95,9 +112,9 @@ const CartDropdown = () => {
                       </div>
                     ))}
                 </div>
-                <div className="p-4 flex flex-col gap-y-4 text-small-regular">
+                <div className="flex flex-col p-4 gap-y-4 text-small-regular">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-700 font-semibold">
+                    <span className="font-semibold text-gray-700">
                       Subtotal{" "}
                       <span className="font-normal">(incl. taxes)</span>
                     </span>
@@ -118,8 +135,8 @@ const CartDropdown = () => {
               </>
             ) : (
               <div>
-                <div className="flex py-16 flex-col gap-y-4 items-center justify-center">
-                  <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
+                <div className="flex flex-col items-center justify-center py-16 gap-y-4">
+                  <div className="flex items-center justify-center w-6 h-6 text-white bg-gray-900 rounded-full text-small-regular">
                     <span>0</span>
                   </div>
                   <span>Your shopping bag is empty.</span>
@@ -138,7 +155,7 @@ const CartDropdown = () => {
         </Transition>
       </Popover>
     </div>
-  )
-}
+  );
+};
 
-export default CartDropdown
+export default CartDropdown;

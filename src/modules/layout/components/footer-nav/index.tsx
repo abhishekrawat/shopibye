@@ -171,7 +171,7 @@ const FooterNav = () => {
               <div className="flex flex-wrap items-center">
                 <div className="w-full xl:flex-1">
                   <input
-                    className="w-full p-3 font-medium text-gray-500 placeholder-gray-500 outline-none xl:p-0 xl:pr-6"
+                    className="w-full p-3 font-medium text-gray-500 placeholder-gray-500 border-0 focus:outline-none active:outline-none xl:p-0 xl:pr-6"
                     id="footerInput1-1"
                     type="text"
                     placeholder="Type your e-mail"
@@ -220,7 +220,7 @@ const FooterNav = () => {
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
-                fill="none"
+                fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path

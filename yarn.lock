@@ -821,10 +821,10 @@
     uuid "^8.3.1"
     winston "^3.2.1"
 
-"@medusajs/medusa@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@medusajs/medusa/-/medusa-1.4.1.tgz#69b79b96c866fa69c8d057fc793aef95f188a4f8"
-  integrity sha512-U7hpET9s0/F6gu8fq5gdwrlpO5GqFR629oiyaRkwJ7Q/R+elHFpZ+C4mWJa4LLCgT5JLjh82c9wZiWRgTx2k7g==
+"@medusajs/medusa@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@medusajs/medusa/-/medusa-1.5.0.tgz#081f9181a68b3a1d46093786e0ece762a00fcfaa"
+  integrity sha512-5CoXqXZJuPUxD9bE7k7iG0N0mYao2DcOnGF1BpE3Pq1ClUI66vet523axvhBCxdRmc1VTslqVrosGxASBgimrA==
   dependencies:
     "@medusajs/medusa-cli" "^1.3.3"
     "@types/ioredis" "^4.28.10"
@@ -848,7 +848,7 @@
     ioredis-mock "^5.6.0"
     iso8601-duration "^1.3.0"
     jsonwebtoken "^8.5.1"
-    medusa-core-utils "^1.1.31"
+    medusa-core-utils "^1.1.32"
     medusa-test-utils "^1.1.37"
     morgan "^1.9.1"
     multer "^1.4.2"
@@ -5019,6 +5019,14 @@ medusa-core-utils@^1.1.31:
   version "1.1.31"
   resolved "https://registry.yarnpkg.com/medusa-core-utils/-/medusa-core-utils-1.1.31.tgz#6cfc89566c2107faedf0f9128f2643b34b201455"
   integrity sha512-nMAmdjm2HoizOskSOyK/KK7dJ3ccC86+dPbT5Q4AeJ9bTJVCTOFnkUMEScuSM5pXx1y8k+yxXRBvrv/Thh2OTw==
+  dependencies:
+    joi "^17.3.0"
+    joi-objectid "^3.0.1"
+
+medusa-core-utils@^1.1.32:
+  version "1.1.32"
+  resolved "https://registry.yarnpkg.com/medusa-core-utils/-/medusa-core-utils-1.1.32.tgz#49b16dd8dff2017f1afab02f15a047ebc4ff52b3"
+  integrity sha512-TGGAreayHpkgfFi7shbi/zCRC5hE+CUYef+k07+cL7Nd6LMLYhzMgBJo2iL8mO7TwK9brfErqJrm12GCjf3L7g==
   dependencies:
     joi "^17.3.0"
     joi-objectid "^3.0.1"
