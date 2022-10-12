@@ -17,7 +17,7 @@ const TopCat = (props) => {
               </span> */}
               <a className="absolute inset-0 flex items-end" href="#">
                 <div className="pb-6 pl-6">
-                  <h3 className="text-6xl font-bold text-white font-heading">
+                  <h3 className="text-6xl font-bold text-transparent font-heading bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-600">
                     Women
                   </h3>
                   <p className="text-xl font-bold text-white font-heading">
@@ -35,7 +35,7 @@ const TopCat = (props) => {
               </span> */}
               <a className="absolute inset-0 flex items-end" href="#">
               <div className="pb-6 pl-6">
-                  <h3 className="text-6xl font-bold text-white font-heading">
+                  <h3 className="text-6xl font-bold text-transparent font-heading bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                     Men
                   </h3>
                   {/* <p className="text-xl font-bold text-white font-heading">
@@ -53,11 +53,11 @@ const TopCat = (props) => {
               {/* <span className="inline-block px-2 py-1 mt-4 ml-4 text-xs font-bold text-blue-500 uppercase bg-white border-2 border-blue-400 rounded-full font-heading">
                 New
               </span> */}
-              <div className="absolute bottom-0 left-0 pb-4 pl-8">
-                <span className="text-xl font-bold text-pink-400 font-heading">
+              <div className="absolute bottom-0 left-0 pb-4 pl-6">
+                <span className="text-xl font-bold text-white font-heading">
                   End of Season
                 </span>
-                <h3 className="mt-3 mb-2 text-6xl font-bold text-white font-heading">
+                <h3 className="mt-0 mb-2 text-6xl font-bold text-transparent font-heading bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
                   Sale
                 </h3>
                 {/* <p className="mb-10 font-bold text-white font-heading">
