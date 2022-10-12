@@ -25,7 +25,7 @@ const Categories = (props) => {
                 priority={true}
                 quality={50}
                 alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-                className="inset-0 rounded-2xl"
+                className="absolute inset-0 transition ease-in-out rounded-2xl hover:scale-110"
                 draggable="false"
               />
               <span className="flex justify-center text-xl font-bold text-gray-600">Tops</span>
@@ -40,7 +40,7 @@ const Categories = (props) => {
                 priority={true}
                 quality={50}
                 alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-                className="absolute inset-0 rounded-2xl"
+                className="absolute inset-0 transition ease-in-out rounded-2xl hover:scale-110"
                 draggable="false"
               />
               <span className="flex justify-center text-xl font-bold text-gray-600">Bottoms</span>
@@ -56,7 +56,7 @@ const Categories = (props) => {
                 quality={50}
                 objectFit="cover"
                 alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-                className="absolute inset-0 rounded-2xl"
+                className="absolute inset-0 transition ease-in-out rounded-2xl hover:scale-110"
                 draggable="false"
               />
               <span className="flex justify-center text-xl font-bold text-gray-600">Outdoors</span>
@@ -71,7 +71,7 @@ const Categories = (props) => {
                 quality={50}
                 objectFit="cover"
                 alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-                className="absolute inset-0 rounded-2xl"
+                className="absolute inset-0 transition ease-in-out rounded-2xl hover:scale-110"
                 draggable="false"
               />
               <span className="flex justify-center text-xl font-bold text-gray-600">Tshirts</span>
@@ -86,7 +86,7 @@ const Categories = (props) => {
                 quality={50}
                 objectFit="cover"
                 alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-                className="absolute inset-0 rounded-2xl"
+                className="absolute inset-0 transition ease-in-out rounded-2xl hover:scale-110"
                 draggable="false"
               />
               <span className="flex justify-center text-xl font-bold text-gray-600">Dresses</span>
@@ -101,7 +101,7 @@ const Categories = (props) => {
                 quality={50}
                 objectFit="cover"
                 alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-                className="absolute inset-0 rounded-2xl"
+                className="absolute inset-0 transition ease-in-out rounded-2xl hover:scale-110"
                 draggable="false"
               />
               <span className="flex justify-center text-xl font-bold text-gray-600">Accessories</span>
