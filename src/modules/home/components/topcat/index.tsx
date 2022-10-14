@@ -7,8 +7,8 @@ const TopCat = (props) => {
   const { data } = useFeaturedProductsQuery();
 
   return (
-    <div className="mt-18 bg-blue-50">
-      <div className="w-full px-4 mx-auto lg:max-w-screen-2xl">
+    <div className="mt-16 bg-white">
+      <div className="w-full px-4 mx-auto lg:max-w-screen-4xl">
         <div className="flex flex-wrap">
           <div className="w-full mb-1 lg:w-1/2 lg:mb-0">
             <div className="relative w-full h-64 mb-1 bg-center bg-no-repeat bg-cover  bg-[url('/women.jpg')]">
