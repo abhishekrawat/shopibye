@@ -2,6 +2,7 @@ import { useFeaturedProductsQuery } from "@lib/hooks/use-layout-data"
 import UnderlineLink from "@modules/common/components/underline-link"
 import ProductPreview from "@modules/products/components/product-preview"
 import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview"
+import Link from "next/link"
 
 const FeaturedProducts = (props) => {
   const { data } = useFeaturedProductsQuery()
@@ -22,9 +23,9 @@ const FeaturedProducts = (props) => {
           <span className="text-2xl font-bold text-gray-600 ">
             {props.name}
           </span>
-          <span className="text-lg font-normal text-gray-600 ">
+          <Link href={"#"} className="text-lg font-normal text-gray-600 ">
             View all
-          </span>
+          </Link>
 
         </div>
         <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-4 gap-y-8">

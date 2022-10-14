@@ -1,8 +1,5 @@
 import { useFeaturedProductsQuery } from "@lib/hooks/use-layout-data";
-import UnderlineLink from "@modules/common/components/underline-link";
-import ProductPreview from "@modules/products/components/product-preview";
-import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview";
-
+import Link from "next/link"
 const TopCat = (props) => {
   const { data } = useFeaturedProductsQuery();
 
@@ -48,7 +45,7 @@ const TopCat = (props) => {
               </a>
             </div>
           </div>
-          <div className="w-full lg:pl-1 lg:w-1/2">
+          <a href="#" className="w-full lg:pl-1 lg:w-1/2">
             <div className="relative inline-block w-full mb-1 bg-no-repeat bg-cover h-96 lg:h-full bg-[url('/sale.jpg')]">
               {/* <span className="inline-block px-2 py-1 mt-4 ml-4 text-xs font-bold text-blue-500 uppercase bg-white border-2 border-blue-400 rounded-full font-heading">
                 New
@@ -71,7 +68,7 @@ const TopCat = (props) => {
                 </a> */}
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -1,5 +1,8 @@
 import Image from "next/future/image";
+import Link from "next/link"
 // import Image from "next/image";
+
+
 const Categories = (props) => {
   return (
     <div className="px-4 py-16 bg-white lg:content-container">
@@ -11,7 +14,7 @@ const Categories = (props) => {
       </div>
       <div className="">
         <div className="grid grid-cols-3 small:grid-cols-6 gap-x-4 gap-y-4">
-          <div className="block overflow-visible">
+          <a href="#">
             <Image
               src="/c1.jpg"
               width={200}
@@ -26,9 +29,9 @@ const Categories = (props) => {
             <span className="flex justify-center mt-2 text-xl font-bold text-gray-600">
               Tops
             </span>
-          </div>
+          </a>
 
-          <div>
+          <a href="#">
             <Image
               src="/c2.jpg"
               width={200}
@@ -43,9 +46,9 @@ const Categories = (props) => {
             <span className="flex justify-center mt-2 text-xl font-bold text-gray-600">
               Bottoms
             </span>
-          </div>
+          </a>
 
-          <div>
+          <a href="#">
             <Image
               src="/c3.jpg"
               width={200}
@@ -60,8 +63,8 @@ const Categories = (props) => {
             <span className="flex justify-center mt-2 text-xl font-bold text-gray-600">
               Outdoors
             </span>
-          </div>
-          <div>
+          </a>
+          <a href="#">
             <Image
               src="/c4.jpg"
               width={200}
@@ -76,8 +79,8 @@ const Categories = (props) => {
             <span className="flex justify-center mt-2 text-xl font-bold text-gray-600">
               Tshirts
             </span>
-          </div>
-          <div>
+          </a>
+          <a href="#">
             <Image
               src="/c5.jpg"
               width={200}
@@ -92,8 +95,8 @@ const Categories = (props) => {
             <span className="flex justify-center mt-2 text-xl font-bold text-gray-600">
               Dresses
             </span>
-          </div>
-          <div>
+          </a>
+          <a href="#">
             <Image
               src="/c6.jpg"
               width={200}
@@ -108,7 +111,7 @@ const Categories = (props) => {
             <span className="flex justify-center mt-2 text-xl font-bold text-gray-600">
               Accessories
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </div>
