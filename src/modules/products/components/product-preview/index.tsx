@@ -25,7 +25,7 @@ const ProductPreview = ({
                     </span>
                   )}
                   <span
-                    className={clsx("font-semibold", {
+                    className={clsx("font-bold", {
                       "text-rose-500": price.price_type === "sale",
                     })}
                   >

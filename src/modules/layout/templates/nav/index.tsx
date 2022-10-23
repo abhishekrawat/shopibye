@@ -68,7 +68,7 @@ const Nav = () => {
             </div>
             <div className="h-full small:block">
               <Link href="/">
-                <Image src="/ciyona_logo.svg" height={60} width={100} alt="Shop logo" />
+                <Image src="/shoppibye.svg" height={60} width={100} alt="Shop logo" />
               </Link>
             </div>
           </div>
