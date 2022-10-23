@@ -27,7 +27,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
   return (
     <div>
       <Tab.Group>
-        <Tab.List className="border-b border-gray-200 box-border grid grid-cols-2">
+        <Tab.List className="box-border grid grid-cols-2 border-b border-gray-200">
           {tabs.map((tab, i) => {
             return (
               <Tab
@@ -58,7 +58,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
 
 const ProductInfoTab = ({ product }: ProductTabsProps) => {
   return (
-    <Tab.Panel className="text-small-regular py-8">
+    <Tab.Panel className="py-8 text-small-regular">
       <div className="grid grid-cols-2 gap-x-8">
         <div className="flex flex-col gap-y-4">
           <div>
@@ -100,7 +100,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
 
 const ShippingInfoTab = () => {
   return (
-    <Tab.Panel className="text-small-regular py-8">
+    <Tab.Panel className="py-8 text-small-regular">
       <div className="grid grid-cols-1 gap-y-8">
         <div className="flex items-start gap-x-2">
           <FastDelivery />

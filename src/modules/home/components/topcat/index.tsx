@@ -16,30 +16,20 @@ const TopCat = (props) => {
                     Women
                   </h3>
                   <p className="text-xl font-bold text-white font-heading">
-                    {/* <span>$10.30</span> */}
-                    {/* <span className="text-sm font-normal line-through">
-                      11.99
-                    </span> */}
+     
                   </p>
                 </div>
               </a>
             </div>
             <div className="relative w-full h-64 bg-center bg-no-repeat bg-cover bg-[url('/men.jpg')]">
             <div className="absolute w-full h-64 bg-center bg-no-repeat bg-gradient-to-t from-black to-transparent "></div>
-              {/* <span className="inline-block px-2 py-1 mt-4 ml-4 text-xs font-bold text-red-500 bg-white border-2 border-red-500 rounded-full font-heading">
-                -10%
-              </span> */}
+              
               <a className="absolute inset-0 flex items-end" href="#">
               <div className="pb-6 pl-6">
                   <h3 className="text-6xl font-bold text-transparent font-heading bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                     Men
                   </h3>
-                  {/* <p className="text-xl font-bold text-white font-heading">
-                    <span>$126.90</span>
-                    <span className="text-sm font-normal line-through">
-                      $139.90
-                    </span>
-                  </p> */}
+                
                 </div>
               </a>
             </div>
