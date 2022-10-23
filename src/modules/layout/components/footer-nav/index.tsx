@@ -9,9 +9,9 @@ const FooterNav = () => {
   return (
     <div className="flex flex-col pb-8 content-container gap-y-8">
       <div className="pt-24 overflow-hidden bg-white">
-        <div className="container px-4 mx-auto">
+        <div className="container mx-auto">
           <div className="pb-20 border-b">
-            <div className="flex flex-wrap -m-8">
+            <div className="flex flex-wrap">
               <div className="w-full p-8 sm:w-1/2 lg:w-2/12">
                 <h3 className="mb-6 font-semibold leading-normal">ShoppiBye</h3>
                 <ul>
@@ -123,43 +123,7 @@ const FooterNav = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full p-8 sm:w-1/2 lg:w-2/12">
-                <h3 className="mb-6 font-semibold leading-normal">Resources</h3>
-                <ul>
-                  <li className="mb-3.5">
-                    <a
-                      className="font-medium leading-relaxed text-gray-600 hover:text-gray-700"
-                      href="#"
-                    >
-                      Blog
-                    </a>
-                  </li>
-                  <li className="mb-3.5">
-                    <a
-                      className="font-medium leading-relaxed text-gray-600 hover:text-gray-700"
-                      href="#"
-                    >
-                      Service
-                    </a>
-                  </li>
-                  <li className="mb-3.5">
-                    <a
-                      className="font-medium leading-relaxed text-gray-600 hover:text-gray-700"
-                      href="#"
-                    >
-                      Product
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="font-medium leading-relaxed text-gray-600 hover:text-gray-700"
-                      href="#"
-                    >
-                      Pricing
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
               <div className="w-full p-8 sm:w-1/2 lg:w-4/12">
                 <div className="lg:max-w-sm">
                   <h3 className="mb-6 font-semibold leading-normal">

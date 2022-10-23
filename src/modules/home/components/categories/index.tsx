@@ -15,7 +15,6 @@ const Categories = (props) => {
       <div className="flex items-center justify-between mb-8">
         <span className="text-2xl font-bold text-gray-600 ">{props.name}</span>
       </div>
-
       <div >
         {collections &&
           chunk(collections, 6).map((chunk, index) => {

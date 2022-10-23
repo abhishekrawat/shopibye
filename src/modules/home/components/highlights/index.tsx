@@ -55,7 +55,7 @@ const Highlights = (props) => {
               width={100}
               height={40}
               className="object-cover h-full transition duration-1000 ease-in-out transform md:w-full hover:scale-105"
-              src="/p3.png"
+              src="/p4.png"
               alt=""
             />
           </div>
