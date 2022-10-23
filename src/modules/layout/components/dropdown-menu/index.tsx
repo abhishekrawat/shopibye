@@ -3,7 +3,6 @@ import {
   useFeaturedProductsQuery,
   useNavigationCollections,
 } from "@lib/hooks/use-layout-data";
-import Image from "next/image";
 import repeat from "@lib/util/repeat"
 import ProductPreview from "@modules/products/components/product-preview"
 import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview"
