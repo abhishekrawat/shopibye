@@ -14,7 +14,7 @@ Discord : Raw#3820
 A Web storefront using NextJs and MedusaJs
 
 ### Preview
-[![Store](https://s4.gifyu.com/images/ezgif-2-6cec4a5106.md.gif)](https://gifyu.com/image/S9Gkk)
+![](https://github.com/shopibye/Preview.gif)
 
 ## Set up Project
 
