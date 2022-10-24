@@ -47,7 +47,7 @@ git clone https://github.com/abhishekrawat/shopibye
 1. Change directory and install dependencies:
 
 ```bash
-cd shopeee
+cd shopybye
 medusa new my-medusa-store --seed
 cd my-medusa-store
 medusa develop
